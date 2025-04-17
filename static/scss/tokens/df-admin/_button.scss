@@ -1,0 +1,140 @@
+.radix-themes {
+    .rt-Button {
+        // --base-button-height: 48px;
+
+        min-width: calc(var(--space-16) + 2px);
+        gap: var(--space-1);
+        padding-inline: var(--space-3);
+        // font-weight: var(--font-weight-regular);
+        line-height: calc(var(--line-height-2) + 2px);
+
+        // box-shadow: inherit;
+        // &.rt-r-size-1,
+        // &.size-sm {
+        //     --base-button-height: var(--space-9);
+        // }
+        // &.rt-r-size-3,
+        // &.size-lg {
+        //     --base-button-height: var(--space-17);
+        //     font-size:var(--font-size-4);
+        // }
+//         &.height-lg {
+//             --base-button-height: var(--space-17);
+//         }
+//         &.btn-sm {
+//             min-width: var(--space-8);
+//         }
+//         &.btn-lg {
+//             min-width: calc(var(--space-19) + 2px);
+//         }
+//         &.btn-xlg {
+//             min-width: calc(var(--space-26) + 2px);
+//         }
+//         &:disabled {
+//             background: var(--color-disabled);
+//             border-color: var(--color-disabled);
+//             color: var(--font-color-disabled);
+//             pointer-events: none;
+//         }
+
+//         //line type
+        // &.rt-variant-outline {
+        //     &:not(:disabled){
+        //         box-shadow: inset 0 0 0 1px var(--color-primary);
+        //         color: var(--color-primary);
+        //     }
+//             border: 1px solid var(--border-primary);
+//             background-color: var(--bg-white);
+//             color: var(--font-darken);
+
+//             // fixme: 스타일 변수화
+//             &.sky {
+//                 border: 1px solid #4a8ae4;
+//                 color: #4a8ae4;
+//             }
+
+//             &:hover {
+//                 border: 1px solid var(--border-darkblue);
+//                 color: var(--border-darkblue);
+//             }
+
+//             &:disabled {
+//                 border-color: var(--color-disabled);
+//                 color: var(--font-color-disabled);
+//                 box-shadow: none;
+//             }
+
+//             a {
+//                 color: var(--font-darken);
+
+//                 &:active,
+//                 &:focus,
+//                 &:visited {
+//                     color: var(--font-darken);
+//                 }
+//             }
+        // }
+
+        // &.rt-variant-ghost {
+        //     &:not(:disabled){
+        //         color: var(--color-primary);
+        //         &:hover,
+        //         &:active {
+        //             color: var(--color-info);
+        //             background-color: transparent;
+        //             svg {
+        //                 path {
+        //                     fill: var(--color-info);
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+
+//         &.rt-variant-surface {
+//             color: var(--font-darken);
+//             border: 1px solid var(--gray-7);
+//             background-color: var(--gray-3);
+//             border-radius: var(--radius-1);
+//         }
+
+//         &.fluid {
+//             width: 100%;
+//         }
+
+//         a {
+//             color: var(--font-white);
+
+//             &:active,
+//             &:focus,
+//             &:visited {
+//                 color: var(--font-white);
+//             }
+//         }
+
+//         &.outline-info {
+//             border: 1px solid var(--color-info);
+//             background-color: var(--bg-white);
+//             color: var(--color-info);
+
+//             &:hover {
+//                 border: 1px solid var(--color-info);
+//                 color: var(--color-info);
+//             }
+
+//             a {
+//                 color: var(--color-info);
+
+//                 &:active,
+//                 &:focus,
+//                 &:visited {
+//                     color: var(--color-info);
+//                 }
+//             }
+//         }
+
+//         &.btn-error {
+//             background: var(--color-error);
+//         }
+    }
+}

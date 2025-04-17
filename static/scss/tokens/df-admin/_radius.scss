@@ -1,0 +1,52 @@
+[data-radius] {
+  --radius-1: calc(4px * var(--scaling) * var(--radius-factor));
+  --radius-2: calc(8px * var(--scaling) * var(--radius-factor));
+  --radius-3: calc(12px * var(--scaling) * var(--radius-factor));
+  --radius-4: calc(16px * var(--scaling) * var(--radius-factor));
+  --radius-5: calc(20px * var(--scaling) * var(--radius-factor));
+  --radius-6: calc(24px * var(--scaling) * var(--radius-factor));
+  --radius-7: calc(28px * var(--scaling) * var(--radius-factor));
+  --radius-8: calc(32px * var(--scaling) * var(--radius-factor));
+  --radius-9: calc(36px * var(--scaling) * var(--radius-factor));
+  --radius-10: calc(40px * var(--scaling) * var(--radius-factor));
+  --radius-11: calc(44px * var(--scaling) * var(--radius-factor));
+  --radius-12: calc(48px * var(--scaling) * var(--radius-factor));
+  --radius-13: calc(52px * var(--scaling) * var(--radius-factor));
+  --radius-14: calc(56px * var(--scaling) * var(--radius-factor));
+  --radius-15: calc(60px * var(--scaling) * var(--radius-factor));
+  --radius-16: calc(64px * var(--scaling) * var(--radius-factor));
+  --radius-17: calc(68px * var(--scaling) * var(--radius-factor));
+  --radius-18: calc(72px * var(--scaling) * var(--radius-factor));
+  --radius-19: calc(76px * var(--scaling) * var(--radius-factor));
+  --radius-20: calc(80px * var(--scaling) * var(--radius-factor));
+}
+
+[data-radius='none'] {
+  --radius-factor: 0;
+  --radius-full: 0px;
+  --radius-thumb: 0.5px;
+}
+
+[data-radius='small'] {
+  --radius-factor: 0.75;
+  --radius-full: 0px;
+  --radius-thumb: 0.5px;
+}
+
+[data-radius='medium'] {
+  --radius-factor: 1;
+  --radius-full: 0px;
+  --radius-thumb: 9999px;
+}
+
+[data-radius='large'] {
+  --radius-factor: 1.5;
+  --radius-full: 0px;
+  --radius-thumb: 9999px;
+}
+
+[data-radius='full'] {
+  --radius-factor: 1.5;
+  --radius-full: 9999px;
+  --radius-thumb: 9999px;
+}

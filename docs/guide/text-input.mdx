@@ -1,0 +1,35 @@
+---
+sidebar_position: 1
+---
+
+import GuideTextInput from '@site/src/components/guide/TextInput';
+
+# TextInput
+
+## 코드
+
+```jsx
+<TextInput
+  id="loginId"
+  value={id}
+  handleInput={setId}
+  label="아이디"
+  placeholder="Please input your ID!"
+  type="text"
+  autoComplete="username"
+/>
+
+<TextInput
+  id="loginPassword"
+  value={pw}
+  handleInput={setPw}
+  label="비밀번호"
+  placeholder="Please input your password!"
+  type="password"
+  autoComplete="current-password"
+/>
+```
+
+## 컴포넌트
+
+<GuideTextInput />

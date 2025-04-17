@@ -1,0 +1,101 @@
+.radix-themes {
+  .rt-SelectTrigger {
+    gap: calc(var(--space-3) - 2px);
+    padding-right: var(--space-2);
+    min-width: 220px;
+    border: 1px solid var(--border-light);
+    background-color: var(--bg-white);
+    box-shadow: none;
+    &:hover {
+      border-color: var(--border-darken);
+      .rt-SelectTriggerInner {
+        color: var(--font-light);
+      }
+    }
+    &:focus {
+      border-color: var(--border-focus);
+    }
+    &:disabled {
+      background-color: var(--bg-disabled);
+      &:hover {
+        border-color: var(--border-light);
+      }
+      .rt-SelectTriggerInner {
+        color: var(--font-disabled);
+      }
+      svg {
+        fill: var(--border-light);
+      }
+    }
+    &.rt-r-size-2 {
+      --select-trigger-height: var(--space-12);
+    }
+    &[data-state='open'] {
+      border: 1px solid var(--border-info);
+      .rt-SelectTriggerInner {
+        color: var(--font-basic);
+      }
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+    svg {
+      width: 24px;
+      height: 24px;
+      padding: calc(var(--space-1) + 1.5px);
+      fill: var(--border-darken);
+      transition: var(--base-transition);
+    }
+    .rt-SelectTriggerInner {
+      color: var(--font-light);
+      font-size: var(--default-font-size);
+      font-weight: var(--font-weight-regular);
+      line-height: var(--line-height-6);
+    }
+    &.rt-full {
+      width: 100%;
+    }
+    &.selected {
+      .rt-SelectTriggerInner {
+        color: var(--font-basic);
+      }
+    }
+  }
+  //selectbox option box
+  .rt-SelectViewport {
+    padding: 0;
+    border: 1px solid var(--border-focus);
+    border-top: 0;
+  }
+  //selectbox option
+  .rt-SelectItem {
+    height: 100%;
+    color: var(--font-basic);
+    font-size: var(--default-font-size);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-6);
+    &[data-highlighted] {
+      background-color: var(--select-option-selected);
+    }
+    &:hover {
+      background-color: var(--bg-light);
+    }
+    &[data-disabled] {
+      color: var(--select-option-disabled);
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+  //error
+  .flag-error {
+    .rt-SelectTrigger {
+      border-color: var(--color-error);
+    }
+  }
+  // .state-dialog {
+  //   .rt-SelectTrigger {
+  //     min-width: 165px;
+  //   }
+  // }
+}

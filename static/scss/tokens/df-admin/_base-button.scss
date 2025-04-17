@@ -1,0 +1,63 @@
+.radix-themes {
+  .rt-BaseButton {
+    --base-button-height: 40px;
+    font-size: var(--default-font-size);
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+    &.rt-r-size-1,
+    &.size-sm {
+      --base-button-height: var(--space-8);
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+    &.rt-r-size-3,
+    &.size-lg {
+      --base-button-height: var(--space-13);
+      font-size: var(--font-size-4);
+      svg {
+        width: 36px;
+        height: 36px;
+      }
+    }
+    &.rt-r-size-4,
+    &.size-xl {
+      --base-button-height: var(--space-17);
+      font-size: var(--font-size-4);
+      svg {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    //         //line type
+    &.rt-variant-outline {
+      &:not(:disabled) {
+        box-shadow: inset 0 0 0 1px var(--color-primary);
+        color: var(--color-primary);
+      }
+    }
+
+    &.rt-variant-ghost {
+      &:not(:disabled) {
+        color: var(--font-color-darken);
+        &:hover,
+        &:active {
+          color: var(--color-primary);
+          background-color: transparent;
+          svg {
+            path {
+              fill: var(--color-primary);
+            }
+          }
+        }
+      }
+    }
+    &.fluid {
+      width: 100%;
+    }
+  }
+}

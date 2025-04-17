@@ -1,0 +1,43 @@
+.radix-themes {
+    .rt-IconButton {
+        // &.rt-r-size-1 {
+        //     --base-button-height: var(--space-8);
+        // }
+        // &.rt-r-size-2 {
+        //     --base-button-height: var(--space-10);
+        // }
+        // &.rt-variant-text {
+        //     aspect-ratio: 1 / 1;
+        //     box-sizing: border-box;
+        //     height: var(--base-button-height);
+        //     background-color: transparent;
+        //     color: var(--font-basic);
+        //     svg {
+        //         color: inherit;
+        //     }
+        // }
+        // &:hover,
+        // &:active {
+        //     color: var(--color-info);
+        //     background-color: transparent;
+        //     svg {
+        //         path {
+        //             fill: var(--color-info);
+        //         }
+        //     }
+        // }
+        // &:disabled {
+        //     color: var(--select-option-disabled);
+        //     pointer-events: none;
+        //     &:hover,
+        //     &:active {
+        //         color: var(--select-option-disabled);
+        //         svg {
+        //             path {
+        //                 fill: var(--select-option-disabled);
+        //             }
+        //         }
+        //     }
+        // }
+    }
+}

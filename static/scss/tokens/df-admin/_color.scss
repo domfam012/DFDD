@@ -1,0 +1,462 @@
+/**
+ * 엑센트 컬러
+ */
+
+:root,
+.light,
+.light-theme {
+  --blue-1: #fcfdfe;
+  --blue-2: #f7f9fe;
+  --blue-3: #edf1fa;
+  --blue-4: #e1e9f9;
+  --blue-5: #d5e0f7;
+  --blue-6: #c6d6f5;
+  --blue-7: #b5c7ed;
+  --blue-8: #9ab1e1;
+  --blue-9: #192642;
+  --blue-10: #2c3b58;
+  --blue-11: #506490;
+  --blue-12: #1b2844;
+
+  --blue-a1: #0055aa03;
+  --blue-a2: #0040e008;
+  --blue-a3: #0039b912;
+  --blue-a4: #0044cc1e;
+  --blue-a5: #0043cf2a;
+  --blue-a6: #0048d339;
+  --blue-a7: #013fc14a;
+  --blue-a8: #003bb465;
+  --blue-a9: #000e2ee6;
+  --blue-a10: #001235d3;
+  --blue-a11: #001d5daf;
+  --blue-a12: #000f2ee4;
+
+  --blue-contrast: #fff;
+  --blue-surface: #f5f8fecc;
+  --blue-indicator: #192642;
+  --blue-track: #192642;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root,
+    .light,
+    .light-theme {
+      --blue-1: oklch(99.3% 0.0017 264.2);
+      --blue-2: oklch(98.3% 0.006 264.2);
+      --blue-3: oklch(95.8% 0.0122 264.2);
+      --blue-4: oklch(93.3% 0.0226 264.2);
+      --blue-5: oklch(90.6% 0.0336 264.2);
+      --blue-6: oklch(87.4% 0.046 264.2);
+      --blue-7: oklch(82.9% 0.0562 264.2);
+      --blue-8: oklch(76% 0.074 264.2);
+      --blue-9: oklch(27.2% 0.0553 264.2);
+      --blue-10: oklch(35.3% 0.0553 264.2);
+      --blue-11: oklch(50.6% 0.074 264.2);
+      --blue-12: oklch(28% 0.0553 264.2);
+
+      --blue-a1: color(display-p3 0.0235 0.349 0.6745 / 0.012);
+      --blue-a2: color(display-p3 0.0196 0.2667 0.8784 / 0.032);
+      --blue-a3: color(display-p3 0.0078 0.1843 0.651 / 0.067);
+      --blue-a4: color(display-p3 0.0039 0.2471 0.7608 / 0.114);
+      --blue-a5: color(display-p3 0.0039 0.2275 0.7529 / 0.157);
+      --blue-a6: color(display-p3 0.0039 0.2235 0.7608 / 0.212);
+      --blue-a7: color(display-p3 0.0039 0.2 0.7059 / 0.279);
+      --blue-a8: color(display-p3 0.0039 0.1882 0.651 / 0.381);
+      --blue-a9: color(display-p3 0 0.0431 0.1569 / 0.891);
+      --blue-a10: color(display-p3 0 0.0588 0.1882 / 0.816);
+      --blue-a11: color(display-p3 0 0.0902 0.3333 / 0.671);
+      --blue-a12: color(display-p3 0 0.0431 0.1608 / 0.883);
+
+      --blue-contrast: #fff;
+      --blue-surface: color(display-p3 0.9647 0.9725 0.9922 / 0.8);
+      --blue-indicator: oklch(27.2% 0.0553 264.2);
+      --blue-track: oklch(27.2% 0.0553 264.2);
+    }
+  }
+}
+
+/**
+   세컨 컬러
+  */
+
+:root,
+.light,
+.light-theme {
+  --red-1: #fffcfb;
+  --red-2: #fff7f6;
+  --red-3: #ffeae7;
+  --red-4: #ffdad3;
+  --red-5: #ffcac2;
+  --red-6: #ffb9af;
+  --red-7: #fea499;
+  --red-8: #f6887b;
+  --red-9: #f12828;
+  --red-10: #e30014;
+  --red-11: #dc0010;
+  --red-12: #681512;
+
+  --red-a1: #ff400004;
+  --red-a2: #ff1d0009;
+  --red-a3: #ff200018;
+  --red-a4: #ff29002c;
+  --red-a5: #ff22003d;
+  --red-a6: #ff200050;
+  --red-a7: #fd1c0066;
+  --red-a8: #ee1a0084;
+  --red-a9: #ee0000d7;
+  --red-a10: #e30014;
+  --red-a11: #dc0010;
+  --red-a12: #5d0300ed;
+
+  --red-contrast: #fff;
+  --red-surface: #fff5f4cc;
+  --red-indicator: #f12828;
+  --red-track: #f12828;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root,
+    .light,
+    .light-theme {
+      --red-1: oklch(99.4% 0.0037 27.51);
+      --red-2: oklch(98.4% 0.0093 27.51);
+      --red-3: oklch(95.5% 0.0252 27.51);
+      --red-4: oklch(92.7% 0.0558 27.51);
+      --red-5: oklch(89.5% 0.0736 27.51);
+      --red-6: oklch(85.5% 0.0893 27.51);
+      --red-7: oklch(80.6% 0.108 27.51);
+      --red-8: oklch(74.4% 0.1364 27.51);
+      --red-9: oklch(61.6% 0.2322 27.51);
+      --red-10: oklch(57.5% 0.2353 27.51);
+      --red-11: oklch(56.1% 0.2322 27.51);
+      --red-12: oklch(34.2% 0.1162 27.51);
+
+      --red-a1: color(display-p3 0.7569 0.2667 0.0235 / 0.016);
+      --red-a2: color(display-p3 0.8941 0.1294 0.0235 / 0.036);
+      --red-a3: color(display-p3 0.8314 0.1412 0.0118 / 0.091);
+      --red-a4: color(display-p3 0.8627 0.1647 0.0039 / 0.169);
+      --red-a5: color(display-p3 0.8667 0.1412 0.0039 / 0.232);
+      --red-a6: color(display-p3 0.8588 0.1333 0.0039 / 0.302);
+      --red-a7: color(display-p3 0.8588 0.1255 0.0039 / 0.389);
+      --red-a8: color(display-p3 0.8157 0.1176 0 / 0.502);
+      --red-a9: color(display-p3 0.8353 0.051 0 / 0.793);
+      --red-a10: color(display-p3 0.7843 0.0275 0 / 0.851);
+      --red-a11: color(display-p3 0.7608 0.0353 0 / 0.863);
+      --red-a12: color(display-p3 0.3098 0.0235 0 / 0.91);
+
+      --red-contrast: #fff;
+      --red-surface: color(display-p3 1 0.9647 0.9608 / 0.8);
+      --red-indicator: oklch(61.6% 0.2322 27.51);
+      --red-track: oklch(61.6% 0.2322 27.51);
+    }
+  }
+}
+
+/**
+    그레이 컬러
+  */
+
+:root,
+.light,
+.light-theme {
+  --gray-1: #fcfcfc;
+  --gray-2: #f9f9f9;
+  --gray-3: #efefef;
+  --gray-4: #e8e8e8;
+  --gray-5: #e0e0e0;
+  --gray-6: #d8d8d8;
+  --gray-7: #cecece;
+  --gray-8: #bbb;
+  --gray-9: #666;
+  --gray-10: #585858;
+  --gray-11: #646464;
+  --gray-12: #202020;
+
+  --gray-a1: #00000003;
+  --gray-a2: #00000006;
+  --gray-a3: #00000010;
+  --gray-a4: #00000017;
+  --gray-a5: #0000001f;
+  --gray-a6: #00000027;
+  --gray-a7: #00000031;
+  --gray-a8: #00000044;
+  --gray-a9: #00000099;
+  --gray-a10: #000000a7;
+  --gray-a11: #0000009b;
+  --gray-a12: #000000df;
+
+  --gray-contrast: #fff;
+  --gray-surface: #f8f8f8cc;
+  --gray-indicator: #666;
+  --gray-track: #666;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root,
+    .light,
+    .light-theme {
+      --gray-1: oklch(99.1% 0 none);
+      --gray-2: oklch(98.1% 0 none);
+      --gray-3: oklch(95.3% 0 none);
+      --gray-4: oklch(93% 0 none);
+      --gray-5: oklch(90.8% 0 none);
+      --gray-6: oklch(88.4% 0 none);
+      --gray-7: oklch(85% 0 none);
+      --gray-8: oklch(79.1% 0 none);
+      --gray-9: oklch(51% 0 none);
+      --gray-10: oklch(46.1% 0 none);
+      --gray-11: oklch(50.3% 0 none);
+      --gray-12: oklch(24.4% 0 none);
+
+      --gray-a1: color(display-p3 0 0 0 / 0.0118);
+      --gray-a2: color(display-p3 0 0 0 / 0.0235);
+      --gray-a3: color(display-p3 0 0 0 / 0.0627);
+      --gray-a4: color(display-p3 0 0 0 / 0.0902);
+      --gray-a5: color(display-p3 0 0 0 / 0.1216);
+      --gray-a6: color(display-p3 0 0 0 / 0.1529);
+      --gray-a7: color(display-p3 0 0 0 / 0.1922);
+      --gray-a8: color(display-p3 0 0 0 / 0.2667);
+      --gray-a9: color(display-p3 0 0 0 / 0.6);
+      --gray-a10: color(display-p3 0 0 0 / 0.6549);
+      --gray-a11: color(display-p3 0 0 0 / 0.6078);
+      --gray-a12: color(display-p3 0 0 0 / 0.8745);
+
+      --gray-contrast: #fff;
+      --gray-surface: color(display-p3 0.9725 0.9725 0.9725 / 0.8);
+      --gray-indicator: oklch(51% 0 none);
+      --gray-track: oklch(51% 0 none);
+    }
+  }
+}
+
+:root, .light, .light-theme {
+  --indigo-1: #fbfdff;
+  --indigo-2: #f3f9ff;
+  --indigo-3: #e5f3ff;
+  --indigo-4: #d7ecff;
+  --indigo-5: #c6e2ff;
+  --indigo-6: #b0d4ff;
+  --indigo-7: #93c2ff;
+  --indigo-8: #6aa8ff;
+  --indigo-9: #003f98;
+  --indigo-10: #1751ac;
+  --indigo-11: #1e6ce4;
+  --indigo-12: #002981;
+
+  --indigo-a1: #0080ff04;
+  --indigo-a2: #0080ff0c;
+  --indigo-a3: #008aff1a;
+  --indigo-a4: #0086ff28;
+  --indigo-a5: #007eff39;
+  --indigo-a6: #0075ff4f;
+  --indigo-a7: #006fff6c;
+  --indigo-a8: #006aff95;
+  --indigo-a9: #003f98;
+  --indigo-a10: #0040a4e8;
+  --indigo-a11: #0058e0e1;
+  --indigo-a12: #002981;
+
+  --indigo-contrast: #fff;
+  --indigo-surface: #f0f8ffcc;
+  --indigo-indicator: #003f98;
+  --indigo-track: #003f98;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --indigo-1: oklch(99.3% 0.0053 259.5);
+      --indigo-2: oklch(98.2% 0.0155 259.5);
+      --indigo-3: oklch(96% 0.0323 259.5);
+      --indigo-4: oklch(93.7% 0.0602 259.5);
+      --indigo-5: oklch(90.6% 0.0869 259.5);
+      --indigo-6: oklch(86.4% 0.1114 259.5);
+      --indigo-7: oklch(80.9% 0.1437 259.5);
+      --indigo-8: oklch(73.5% 0.1968 259.5);
+      --indigo-9: oklch(39.4% 0.1568 259.5);
+      --indigo-10: oklch(45.5% 0.1568 259.5);
+      --indigo-11: oklch(55.8% 0.1968 259.5);
+      --indigo-12: oklch(32.4% 0.1568 259.5);
+
+      --indigo-a1: color(display-p3 0.0235 0.5137 1 / 0.016);
+      --indigo-a2: color(display-p3 0.0196 0.4667 0.9137 / 0.044);
+      --indigo-a3: color(display-p3 0.0118 0.4863 0.9608 / 0.091);
+      --indigo-a4: color(display-p3 0.0078 0.451 0.9451 / 0.142);
+      --indigo-a5: color(display-p3 0.0039 0.4235 0.9451 / 0.204);
+      --indigo-a6: color(display-p3 0.0039 0.3922 0.9451 / 0.283);
+      --indigo-a7: color(display-p3 0.0039 0.3686 0.949 / 0.385);
+      --indigo-a8: color(display-p3 0 0.3412 0.949 / 0.53);
+      --indigo-a9: color(display-p3 0 0.1686 0.5294 / 0.91);
+      --indigo-a10: color(display-p3 0 0.1843 0.5843 / 0.844);
+      --indigo-a11: color(display-p3 0 0.2588 0.8275 / 0.789);
+      --indigo-a12: color(display-p3 0 0.1098 0.4588 / 0.95);
+
+      --indigo-contrast: #fff;
+      --indigo-surface: color(display-p3 0.949 0.9725 1 / 0.8);
+      --indigo-indicator: oklch(39.4% 0.1568 259.5);
+      --indigo-track: oklch(39.4% 0.1568 259.5);
+    }
+  }
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root, .light, .light-theme {
+      --teal-1: oklch(99.4% 0.0057 190.7);
+      --teal-2: oklch(98.1% 0.0108 190.7);
+      --teal-3: oklch(96.1% 0.0325 190.7);
+      --teal-4: oklch(93.5% 0.0503 190.7);
+      --teal-5: oklch(90% 0.0652 190.7);
+      --teal-6: oklch(85.6% 0.0773 190.7);
+      --teal-7: oklch(79.7% 0.0917 190.7);
+      --teal-8: oklch(72.1% 0.1167 190.7);
+      --teal-9: oklch(73.7% 0.1167 190.7);
+      --teal-10: oklch(70.1% 0.1167 190.7);
+      --teal-11: oklch(52.8% 0.1167 190.7);
+      --teal-12: oklch(32.8% 0.0602 190.7);
+
+      --teal-a1: color(display-p3 0.0196 0.8039 0.8039 / 0.02);
+      --teal-a2: color(display-p3 0.0235 0.6745 0.5922 / 0.048);
+      --teal-a3: color(display-p3 0.0039 0.7765 0.7451 / 0.122);
+      --teal-a4: color(display-p3 0.0078 0.7804 0.7176 / 0.193);
+      --teal-a5: color(display-p3 0.0039 0.7137 0.6706 / 0.271);
+      --teal-a6: color(display-p3 0.0039 0.6392 0.5961 / 0.357);
+      --teal-a7: color(display-p3 0.0039 0.5882 0.5569 / 0.467);
+      --teal-a8: color(display-p3 0 0.5725 0.5451 / 0.64);
+      --teal-a9: color(display-p3 0 0.5882 0.5647 / 0.62);
+      --teal-a10: color(display-p3 0 0.549 0.5294 / 0.667);
+      --teal-a11: color(display-p3 0 0.349 0.3294 / 0.785);
+      --teal-a12: color(display-p3 0 0.1647 0.1608 / 0.91);
+
+      --teal-contrast: #fff;
+      --teal-surface: color(display-p3 0.9412 0.9804 0.9765 / 0.8);
+      --teal-indicator: oklch(73.7% 0.1167 190.7);
+      --teal-track: oklch(73.7% 0.1167 190.7);
+    }
+  }
+}
+
+:root{
+
+  --accent-1: var(--indigo-1);
+  --accent-2: var(--indigo-2);
+  --accent-3: var(--indigo-3);
+  --accent-4: var(--indigo-4);
+  --accent-5: var(--indigo-5);
+  --accent-6: var(--indigo-6);
+  --accent-7: var(--indigo-7);
+  --accent-8: var(--indigo-8);
+  --accent-9: var(--indigo-9);
+  --accent-10: var(--indigo-10);
+  --accent-11: var(--indigo-11);
+  --accent-12: var(--indigo-12);
+  --accent-a1: var(--indigo-a1);
+  --accent-a2: var(--indigo-a2);
+  --accent-a3: var(--indigo-a3);
+  --accent-a4: var(--indigo-a4);
+  --accent-a5: var(--indigo-a5);
+  --accent-a6: var(--indigo-a6);
+  --accent-a7: var(--indigo-a7);
+  --accent-a8: var(--indigo-a8);
+  --accent-a9: var(--indigo-a9);
+  --accent-a10: var(--indigo-a10);
+  --accent-a11: var(--indigo-a11);
+  --accent-a12: var(--indigo-a12);
+  --accent-contrast: var(--indigo-contrast);
+  --accent-surface: var(--indigo-surface);
+  --accent-indicator: var(--indigo-indicator);
+  --accent-track: var(--indigo-track);
+}
+/**
+   시멘틱 변수들
+  */
+.radix-themes {
+  --color-primary: var(--accent-9);
+  --color-secondary: var(--red-9);
+  --color-error: var(--red-9);
+  --color-info: #4a8ae4;
+  --color-disabled: #f6f6f6;
+  --color-success: #31c1bb;
+
+  /* elements color */
+  --elements-orange: #ff9f2f;
+  --elements-yellow: #ffcf26;
+  --elements-green: #93cd3d;
+  --elements-blue: #71aeff; // #4593f9;
+  --elements-mint: #62ddcc;
+  --elements-violet: #9d68f2;
+  --elements-peach: #ffa69d;
+
+  /* sw CI color */
+  --sw-dark-blue: var(--blue-9);
+  --sw-orange: #f95029;
+  --sw-yellow: #f9a61a;
+  --sw-green: #00a885;
+  --sw-light-blue: #2073d1;
+  --sw-bg-line-blue: #a8ceff;
+  --sw-bg-line-green: #b9e37b;
+
+  --font-white: var(--gray-contrast);
+  --font-light: var(--gray-7);
+  --font-basic: var(--gray-9);
+  --font-darken: var(--gray-12);
+  --font-point: var(--accent-9);
+  --font-error: var(--red-9);
+  --font-info: #128de9;
+  --font-disabled: var(--gray-5);
+
+  --font-color-white: var(--gray-contrast);
+  --font-color-light: var(--gray-7);
+  --font-color-basic: var(--gray-9);
+  --font-color-darken: var(--gray-12);
+  --font-color-point: var(--accent-9);
+  --font-color-info: #128de9;
+  --font-color-error: var(--red-9);
+  --font-color-disabled: var(--gray-5);
+
+  --border-light: var(--gray-4);
+  --border-white: var(--gray-contrast);
+  --border-basic: var(--gray-6);
+  --border-darken: var(--gray-8);
+  --border-primary: var(--accent-9);
+  --border-info: var(--color-info);
+  --border-darkblue: #273f67;
+
+  --bg-light: var(--gray-2);
+  --bg-basic: var(--gray-4);
+  --bg-white: var(--gray-contrast);
+  --bg-primary: var(--color-primary);
+  --bg-primary-active: var(--blue-11);
+  --bg-disabled: var(--color-disabled);
+  --bg-info: var(--color-info);
+  --bg-darkblue: ##273f67;
+
+  --select-option-selected: var(--blue-3);
+  --select-option-hover: var(--color-disabled);
+  --select-option-disabled: #e5e5e5;
+
+  --switch-disabled-thumb: #e6e6e6;
+
+  --aside-info: #4a8ae4;
+  --aside-trigger-active: #10192d;
+  --aside-depth2-bg: #273f67;
+
+  --table-bg: var(--color-disabled);
+  --table-border: #e5e5e5;
+}
+
+.font-error {
+  color: var(--font-error);
+}
+.font-info {
+  color: var(--font-info);
+}
+.font-basic {
+  color: var(--font-basic);
+}
+.font-darken {
+  color: var(--gray-12);
+}

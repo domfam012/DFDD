@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@site/*": ["./*"],
+      "@theme/*": [".docusaurus/theme/*"],
+      "@docusaurus/*": [".docusaurus/*"]
+    }
+  },
+  "include": ["src", ".docusaurus"]
+}
