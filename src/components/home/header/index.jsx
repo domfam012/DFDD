@@ -16,8 +16,8 @@ export default function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs/category/guide">
-            Guide 보기
+          <Link className="button button--secondary button--lg" to="/docs/common">
+            개발 Guide 보기
           </Link>
         </div>
       </div>

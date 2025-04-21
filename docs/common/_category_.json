@@ -1,0 +1,10 @@
+{
+  "label": "공통",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "slug": "/common",
+    "title": "공통 페이지",
+    "description": "공통 페이지입니다."
+  }
+}

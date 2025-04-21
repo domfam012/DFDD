@@ -10,8 +10,8 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'DFDS',
-  tagline: 'Domfam Design System',
+  title: 'DFDD',
+  tagline: 'Domfam Development Document',
   favicon: 'images/common/ci.ico',
 
   // Set the production url of your site here
@@ -23,7 +23,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'DOMFAM', // Usually your GitHub org/user name.
-  projectName: 'DFDS', // Usually your repo name.
+  projectName: 'DFDD', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -57,7 +57,7 @@ const config = {
     ({
       image: 'images/common.logo.svg',
       navbar: {
-        title: 'Domfam Design System',
+        title: 'Domfam Development Document',
         logo: {
           alt: 'domfam ci logo',
           src: 'images/common/ci.svg'
@@ -70,7 +70,7 @@ const config = {
             label: 'Guide'
           },
           {
-            href: 'https://github.com/domfam012/DFDS',
+            href: 'https://github.com/domfam012/DFDD',
             label: 'GitHub',
             position: 'right'
           }
@@ -83,8 +83,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Guide',
-                to: '/docs/category/guide'
+                label: '가이드',
+                to: '/docs/common'
               }
             ]
           },
@@ -102,7 +102,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus'
+                href: 'https://github.com/domfam012/DFDD'
               }
             ]
           }

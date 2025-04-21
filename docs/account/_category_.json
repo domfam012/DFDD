@@ -1,0 +1,10 @@
+{
+  "label": "회원",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "slug": "/account",
+    "title": "회원 페이지",
+    "description": "회원 페이지입니다."
+  }
+}

@@ -5,19 +5,19 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: '첫번째',
-    Svg: require('@site/static/images/common/img-login.svg').default,
-    description: <>내용내용</>
+    title: 'React',
+    Svg: require('@site/static/images/common/logo.svg').default,
+    description: <>v18.3.1</>
   },
   {
-    title: '두번째',
-    Svg: require('@site/static/images/common/img-login.svg').default,
-    description: <>내용내용</>
+    title: 'Vite',
+    Svg: require('@site/static/images/common/logo.svg').default,
+    description: <>v6.1.0</>
   },
   {
-    title: '세번째',
-    Svg: require('@site/static/images/common/img-login.svg').default,
-    description: <>내용내용</>
+    title: 'Nodejs',
+    Svg: require('@site/static/images/common/logo.svg').default,
+    description: <>v22.14.0</>
   }
 ];
 

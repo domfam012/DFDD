@@ -1,0 +1,10 @@
+{
+  "label": "마이페이지",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "slug": "/mypage",
+    "title": "마이페이지",
+    "description": "마이페이지 입니다."
+  }
+}

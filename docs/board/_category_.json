@@ -1,0 +1,10 @@
+{
+  "label": "게시판",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "slug": "/board",
+    "title": "게시판 페이지",
+    "description": "게시판 페이지입니다."
+  }
+}
