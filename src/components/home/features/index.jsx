@@ -6,17 +6,17 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'React',
-    Svg: require('@site/static/images/common/logo.svg').default,
+    Svg: require('/images/home/react.svg').default,
     description: <>v18.3.1</>
   },
   {
     title: 'Vite',
-    Svg: require('@site/static/images/common/logo.svg').default,
+    Svg: require('/images/home/vite.svg').default,
     description: <>v6.1.0</>
   },
   {
     title: 'Nodejs',
-    Svg: require('@site/static/images/common/logo.svg').default,
+    Svg: require('/images/home/node.svg').default,
     description: <>v22.14.0</>
   }
 ];

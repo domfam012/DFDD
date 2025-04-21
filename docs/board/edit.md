@@ -4,9 +4,16 @@ sidebar_position: 2
 
 # 게시판 등록/수정
 
+## 개요
+
+게시판 등록 또는 수정하는 페이지다.
 게시판 등록과 수정 페이지는 같은 컴포넌트를 사용한다.
 
-다음은 게시판 등록/수정 예제이다.
+## 파일 경로
+
+src > components > post > write > PostWrite.jsx
+
+## 게시판 등록/수정 예제 코드
 
 ```js
 // pages/notice/Write.jsx

@@ -4,6 +4,10 @@ sidebar_position: 2
 
 # 회원가입
 
+## 개요
+
+아이디/비밀번호/이메일 등 입력을 통해 회원가입하는 페이지다.
+
 ## 파일 경로
 
 src > pages > auth > signup > index.jsx

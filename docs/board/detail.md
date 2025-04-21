@@ -4,9 +4,16 @@ sidebar_position: 3
 
 # 게시판 상세
 
+## 개요
+
+게시판 상세를 보는 페이지다.
 게시판 상세 페이지 구성은 등록/수정 페이지와 동일하다.
 
-다음은 게시판 상세 예제이다.
+## 파일 경로
+
+src > components > post > detail > PostDetail.jsx
+
+## 게시판 상세 예제 코드
 
 ```js
 // pages/notice/Detail.jsx

@@ -4,6 +4,16 @@ sidebar_position: 5
 
 # 에러 처리
 
+## 개요
+
+공통적인 에러처리 로직을 관리한다.
+
+## 파일 경로
+
+src > api > axios.instance.js
+
+## 에러 처리 코드
+
 ```js
 export const setupInterceptors = store => {
   instance.interceptors.request.use(

@@ -4,6 +4,10 @@ sidebar_position: 3
 
 # 아이디/비밀번호 찾기
 
+## 개요
+
+가입한 이메일을 통해 아이디/비밀번호를 찾는 페이지다.
+
 ## 파일 경로
 
 src > pages > auth > findAccount > index.jsx

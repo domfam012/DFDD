@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # 비밀번호 변경
 
+## 개요
+
+비밀번호를 변경하는 페이지다.
+
 ## 파일 경로
 
 src > pages > myPage > changePassword > index.jsx

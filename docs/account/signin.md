@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # 로그인
 
+## 개요
+
+아이디/비밀번호 입력을 통해 로그인하는 페이지다.
+
 ## 파일 경로
 
 src > pages > auth > signin > index.jsx

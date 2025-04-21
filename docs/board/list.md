@@ -4,7 +4,13 @@ sidebar_position: 1
 
 # 게시판 목록
 
+## 개요
+
 게시판은 크게 목록, 등록/수정, 상세로 나뉜다.
+
+## 파일 경로
+
+src > components > table > TableContent.jsx
 
 ## 게시판 목록 예제 코드
 

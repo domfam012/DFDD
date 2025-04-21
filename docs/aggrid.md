@@ -12,6 +12,10 @@ Ag-Grid는 JavaScript 기반 데이터 그리드 라이브러리로써,
 
 React, Angular, Vue, JavaScript에서 사용 가능
 
+## 파일 경로
+
+src > components > dataTable
+
 ## 설치
 
 ```js
@@ -67,7 +71,7 @@ ModuleRegistry.registerModules([ClientSideRowModelModule]);
 
 ![license3.png](/images/aggrid/license3.png)
 
-메일로 전달해준 시험판 키를 그리드 김승주 바보 컴포넌트에 삽입
+메일로 전달해준 시험판 키를 그리드 컴포넌트에 삽입
 
 ```js
 import { ModuleRegistry } from 'ag-grid-community';

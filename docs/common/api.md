@@ -4,9 +4,15 @@ sidebar_position: 1
 
 # API
 
-## axios.instance. js
+## 개요
 
 api 요청의 경우 axios 라이브러리를 사용한다.
+
+## 파일 경로
+
+src > api > editor > axios.instance.jsx
+
+## axios
 
 axios instance 생성을 통해 default option을 설정한다. (baseURL, headers, timeout, withCredentials 설정 등)
 
