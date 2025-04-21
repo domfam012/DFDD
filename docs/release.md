@@ -181,5 +181,5 @@ sidebar_position: 7
     - CKEditor 연동 : [CKEditor](docs/common/editor.md)
 - 공통 에러 핸들링 : [에러 처리](docs/common/error.md)
   - axios instace interceptors 사용
-- 공통 다이얼로그 : [Dialog](docs/common/dialog.md)
+- 공통 다이얼로그 : [Dialog](docs/common/store.md)
   - 스토어에서 상태값 관리
