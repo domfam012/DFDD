@@ -83,7 +83,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: '가이드',
+                label: 'Guide',
                 to: '/docs/common'
               }
             ]
