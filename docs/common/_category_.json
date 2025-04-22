@@ -4,7 +4,7 @@
   "link": {
     "type": "generated-index",
     "slug": "/common",
-    "title": "공통 페이지",
-    "description": "공통 페이지입니다."
+    "title": "공통",
+    "description": "전역에서 공통으로 사용되는 로직"
   }
 }

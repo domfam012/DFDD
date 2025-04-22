@@ -1,18 +1,23 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 # Router
 
 ## 개요
 
-pages 폴더명을 기반으로 라우팅 설정을 담당하는 파일이다.
+react-router-dom 라이브러리를 통해 페이지 라우팅을 한다.
+
+크게 로그인 여부와 사용자의 권한 별로 라우팅을 처리한다.
 
 ## 파일 경로
 
+```text
 src > app > router.jsx
+src > app > routerList.jsx
+```
 
-## routeList. jsx
+## routeList.jsx
 
 pages 폴더명과 파일명이 route path와 일치하게 개발을 진행한다.
 
@@ -58,8 +63,6 @@ const RouteList = [
 ];
 ```
 
-컴포넌트명은 파스칼 케이스를 사용하지만 url path는 -를 사용하여 케밥 케이스를 사용하는 것이 가독성, SEO 최적화, 웹 접근성, 사용성에 더 적합한 방법이라고 한다.
-
-- 검색엔진에게 단어를 명확히 전달해 SEO에 좋고,
-- 스크린 리더에게도 자연스럽게 전달돼 접근성이 좋으며,
-- 사용자와의 상호작용에서도 가독성과 사용성을 높인다.
+:::tip
+컴포넌트명은 파스칼 케이스를 사용하지만 url path는 -를 사용하여 케밥 케이스를 사용하는 것이 가독성, SEO 최적화, 웹 접근성, 사용성에 더 적합한 방법이다.
+:::

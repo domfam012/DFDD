@@ -1,22 +1,27 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 # 전역상태관리 (store)
 
 ## 개요
 
-전역으로 상태를 관리하는 스토어이다.
+Redux Toolkit을 사용하여 전역으로 상태를 관리한다.
+
+무분별한 prop drilling을 방지하기 위해 여러 컴포넌트에서 사용하는 상태는 스토어 사용을 고려한다.
 
 ## 파일 경로
 
-src > store > slices > \*.jsx
+```text
+src > store > slices > *.js
+```
 
 ## store 폴더 구조
 
-```js
+```json
 🗂️ store
     🗂️ slices
+        - common.js // common store
         - dialog.js // dialog store
         - index.js // store export
         - users.js // auth store
@@ -24,9 +29,11 @@ src > store > slices > \*.jsx
     - reducers.js
 ```
 
+:::tip
 스토어를 무분별하게 사용할 경우 오히려 유지보수가 힘들고 컴포넌트 재사용성 및 확장성이 떨어진다.
 
 따라서 일반적인 경우에 상태관리는 컴포넌트에서 useState를 사용하여 컴포넌트에 종속 시키는 것이 바람직하다.
+:::
 
 ## Dialog Store
 
