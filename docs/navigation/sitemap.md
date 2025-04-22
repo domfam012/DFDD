@@ -10,7 +10,9 @@ Sitemap은 Header 컴포넌트 내부에서 같이 처리된다.
 
 ## 파일 경로
 
+```text
 src > components > layout > Header.jsx
+```
 
 ## 메뉴 로직
 

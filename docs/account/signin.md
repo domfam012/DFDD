@@ -10,7 +10,9 @@ sidebar_position: 1
 
 ## 파일 경로
 
+```text
 src > pages > auth > signin > index.jsx
+```
 
 ## 로그인 로직
 

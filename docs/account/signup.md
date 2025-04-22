@@ -10,7 +10,9 @@ sidebar_position: 2
 
 ## 파일 경로
 
+```text
 src > pages > auth > signup > index.jsx
+```
 
 ## 회원가입 로직
 

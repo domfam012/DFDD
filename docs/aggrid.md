@@ -14,7 +14,9 @@ React, Angular, Vue, JavaScript에서 사용 가능
 
 ## 파일 경로
 
+```text
 src > components > dataTable
+```
 
 ## 설치
 

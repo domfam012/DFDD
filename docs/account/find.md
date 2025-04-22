@@ -10,7 +10,9 @@ sidebar_position: 3
 
 ## 파일 경로
 
+```text
 src > pages > auth > findAccount > index.jsx
+```
 
 ## 아이디/비밀번호 찾기 로직
 
@@ -18,7 +20,7 @@ src > pages > auth > findAccount > index.jsx
 
 아이디/비밀번호 찾기는 같은 페이지를 쓰기 때문에 location.pathname을 통해 아이디 찾기 인지 비밀번호 찾기인지 구분하여 api를 호출한다.
 
-```
+```js
 // URL path에 따라 비밀번호 찾기 또는 아이디 찾기 구분
 const location = useLocation();
 const type = location.pathname === '/auth/find-password' ? 'pw' : 'id';

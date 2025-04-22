@@ -14,11 +14,17 @@ Header에서 사용 중인 menuList를 기반으로 1depth, 2depth를 가지는 
 
 ## 파일 경로
 
+```text
 src > components > layout > BreadCrumbsBox.jsx
+```
+
+## BreadCrumbs 컴포넌트
+
+페이지에서 공통으로 사용하며, 컴포넌트 내부에서 pathname을 부르기 때문에 단순 컴포넌트 호출만 해주면 된다.
+
+### BreadCrumbs 예제 코드
 
 ```js
-// ex) pages > board > notice > index.jsx
-
 // 게시판 관리 > 게시판 목록
 const Notice = () => {
     ...
