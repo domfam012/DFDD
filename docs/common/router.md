@@ -26,41 +26,76 @@ ex) pages > board > Detail.jsx => localhost:3000/board/detail
 라우팅은 userType 별로 접근 권한이 다를 수 있기 때문에 roles로 분기 처리한다.
 
 ```js
-// route 권한을 roles로 변경함 roles 배열에 들어있는 userType만 접근 가능함
-const RouteList = [
-  { path: '/auth/signin', element: <Login />, roles: [] }, // 로그인
-  { path: '/auth/signup', element: <Membership />, roles: [] }, // 회원가입
-  { path: '/auth/signup-complete', element: <MembershipComplete />, roles: [] }, // 회원가입 완료
-  { path: '/auth/find-id', element: <FindAccount />, roles: [] }, // 아이디 찾기
-  { path: '/auth/find-password', element: <FindAccount />, roles: [] }, // 비밀번호 찾기
-
-  // 게시판 관리 > 공지사항 관리
-  { path: '/board/notice', element: <Notice />, roles: ['user', 'admin', 'master'] },
+/**
+ * router와 menu를 동시에 처리하는 배열
+ * ogData, path, element, roles는 라우터, 메뉴 모두 필요한 속성이고 menu는 menu가 필요한 곳에만 추가
+ * 1depth의 roles는 router 접근 자체를 막는 role이고, menu > subMenus > roles는 메뉴에 노출 여부를 결정
+ */
+export const ROUTE_LIST = [
   {
-    path: '/board/notice/write/:id?',
+    ogData: { url: '', description: '', title: '로그인' },
+    path: '/auth/signin',
+    element: <Signin />,
+    roles: []
+  },
+  {
+    ogData: { url: '', description: '', title: '작성 | 공지사항 | 게시판 관리' },
+    path: '/post/notice/write/:id?',
     element: <NoticeWrite />,
     roles: ['user', 'admin', 'master']
   },
   {
-    path: '/board/notice/detail/:id?',
+    ogData: { url: '', description: '', title: '상세 | 공지사항 | 게시판 관리' },
+    path: '/post/notice/detail/:id?',
     element: <NoticeDetail />,
     roles: ['user', 'admin', 'master']
   },
-
-  //  데이터 테이블 > AgGrid
-  { path: '/data-table/ag-grid', element: <AgGrid />, roles: ['user', 'admin', 'master'] },
-
-  // 마이 페이지
-  { path: '/mypage', element: <MyPage />, roles: ['user', 'admin', 'master'] },
   {
-    path: '/mypage/change-password',
-    element: <ChangePassword />,
-    roles: ['user', 'admin', 'master']
-  },
-
-  // 테스트
-  { path: '/test/dialog', element: <Dialog />, roles: ['user', 'admin', 'master'] }
+    ogData: { url: '', description: '', title: '공지사항 | 게시판 관리' },
+    path: '/post/notice',
+    element: <Notice />,
+    roles: ['user', 'admin', 'master'],
+    menu: {
+      menu: '게시판 관리',
+      subMenus: [{ menu: '공지사항', path: '/post/notice', roles: ['user', 'admin', 'master'] }]
+    }
+  }
 ];
+
+/**
+ * ROUTE_LIST에서 현재 로그인한 사용자의 역할에 맞는 메뉴 리스트를 반환 (수정 금지)
+ * @param {*} role
+ * @returns menuList
+ */
+export const getMenuList = role => {
+  const menuMap = new Map();
+
+  for (const route of ROUTE_LIST) {
+    const { menu: menuGroup, roles: routeRoles } = route;
+
+    if (!menuGroup || !routeRoles.includes(role)) continue;
+
+    const { menu: groupName, subMenus } = menuGroup;
+
+    if (!menuMap.has(groupName)) {
+      menuMap.set(groupName, {
+        menu: groupName,
+        subMenus: []
+      });
+    }
+
+    for (const subMenu of subMenus) {
+      if (!subMenu.roles.includes(role)) continue;
+
+      menuMap.get(groupName).subMenus.push({
+        menu: subMenu.menu,
+        path: subMenu.path.replace(/:.*\?$/, '')
+      });
+    }
+  }
+
+  return [...menuMap.values()];
+};
 ```
 
 :::tip
