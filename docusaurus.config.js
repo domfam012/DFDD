@@ -70,6 +70,11 @@ const config = {
             label: 'Guide'
           },
           {
+            to: '/release',
+            position: 'left',
+            label: 'Release Note'
+          },
+          {
             href: 'https://github.com/domfam012/DFDD',
             label: 'GitHub',
             position: 'right'
@@ -85,6 +90,10 @@ const config = {
               {
                 label: 'Guide',
                 to: '/docs/common'
+              },
+              {
+                label: 'Release Note',
+                to: '/release'
               }
             ]
           },
