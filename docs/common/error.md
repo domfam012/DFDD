@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## 개요
 
-에러처리는 [Axios Instance](docs/common/api.md)를 통하여 공통으로 처리하는 방식과 화면 별로 직접 처리하는 방식이 있다.
+에러처리는 [Axios Instance](/docs/common/api)를 통하여 공통으로 처리하는 방식과 화면 별로 직접 처리하는 방식이 있다.
 
 API 요청 시 받는 에러 코드에 맞는 메시지를 ToastDialog로 노출한다.
 
