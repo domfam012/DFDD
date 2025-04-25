@@ -1,0 +1,55 @@
+# main.yml
+name: ci-cd
+
+on:
+  push:
+    branches:
+      - main # main 브랜치에서 push 이벤트가 일어났을 때 실행
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 소스를 체크아웃
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Node.js 설치
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "22"
+
+      # 의존성 설치
+      - name: Install dependencies
+        run: npm install
+
+      # 빌드 실행
+      - name: Build the project
+        run: npm run build
+
+      - name: pwd in build
+        run: pwd
+
+      - name: Deploy
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: |
+          aws s3 cp \
+          --recursive \
+          --region ap-northeast-2 \
+          /home/runner/work/DFDD/DFDD/build s3://df-react-dd
+          
+       #캐시 무효화
+      #- name: CloudFront Invalidation
+      #  env:
+      #       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #       AWS_DEFAULT_REGION: ap-northeast-2
+      #       CLOUDFRONT_DISTRIBUTION_ID_1: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+      #       CLOUDFRONT_DISTRIBUTION_ID_2: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID_2 }}
+      #  run: |
+      #        aws cloudfront create-invalidation --distribution-id "$CLOUDFRONT_DISTRIBUTION_ID_1" --paths "/*"
+      #        aws cloudfront create-invalidation --distribution-id "$CLOUDFRONT_DISTRIBUTION_ID_2" --paths "/*"
