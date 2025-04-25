@@ -67,7 +67,7 @@
 - [lint 수정 및 코드 리팩토링](https://domfam.dooray.com/project/tasks/4050921899810414537)
   - no-unused-vars 정리
   - console warning 수정 (map key)
-  - README.md 수정
+  - README 수정
 
 ### [v2.1.0] 2025.04.11
 
@@ -122,7 +122,7 @@
 
 ![기능 추가](https://img.shields.io/badge/%EA%B8%B0%EB%8A%A5%EC%B6%94%EA%B0%80-4CA975)
 
-- Ag Grid 피봇 기능 추가 : [Ag Grid](/docs/aggrid.md)
+- Ag Grid 피봇 기능 추가 : [Ag Grid](/docs/aggrid)
 - 서버 이전 및 API 정합 : [API 요청 및 응답](https://domfam.dooray.com/wiki/3996596561546924076/4026136238183912502)
   - [코어 &gt; 서버 이전 및 API 정합](https://domfam.dooray.com/task/view/tasks/4023510133250834475)
 - 라우팅별 레이아웃 지정 기능 추가
@@ -150,7 +150,7 @@
 
 ![기능 추가](https://img.shields.io/badge/%EA%B8%B0%EB%8A%A5%EC%B6%94%EA%B0%80-4CA975)
 
-- 데이터 테이블 기능 추가 : [Ag Grid](/docs/aggrid.md)
+- 데이터 테이블 기능 추가 : [Ag Grid](/docs/aggrid)
   - Ag-Grid 컴포넌트 생성
   - 행 관련 기능 추가(선택, 접근, 정렬, 페이지네이션, 병합)
   - 열 관련 기능 추가(헤더, 고정, 그룹, 드래그, 사이즈)
@@ -164,8 +164,8 @@
 
 ![기능 추가](https://img.shields.io/badge/%EA%B8%B0%EB%8A%A5%EC%B6%94%EA%B0%80-4CA975)
 
-- 페이지별 BreadCrumbs 적용 : [BreadCrumbs](/docs/navigation/breadCrumbs.md)
-- 사이트맵 기능 추가 : [Sitemap](/docs/navigation/sitemap.md)
+- 페이지별 BreadCrumbs 적용 : [BreadCrumbs](/docs/navigation/breadCrumbs)
+- 사이트맵 기능 추가 : [Sitemap](/docs/navigation/sitemap)
   - Router 기반 동적 메타데이터 적용 (React Helmet)
 
 ![최적화](https://img.shields.io/badge/%EC%B5%9C%EC%A0%81%ED%99%94-8662d6)
@@ -179,8 +179,8 @@
 
 ![기능 추가](https://img.shields.io/badge/%EA%B8%B0%EB%8A%A5%EC%B6%94%EA%B0%80-4CA975)
 
-- 비밀번호 변경 기능 추가 : [비밀번호 변경](/docs/mypage/changePassword.md)
-- 게시판 댓글 컴포넌트 추가 : [상세](/docs/board/detail.md)
+- 비밀번호 변경 기능 추가 : [비밀번호 변경](/docs/mypage/changePassword)
+- 게시판 댓글 컴포넌트 추가 : [상세](/docs/board/detail)
 
 ![기능 변경](https://img.shields.io/badge/%EA%B8%B0%EB%8A%A5%EB%B3%80%EA%B2%BD-FFA01E)
 
@@ -197,15 +197,15 @@
   - store 모듈화
   - prettier \& eslint 설정
 - 회원 기능
-  - 로그인 : [로그인](/docs/account/signin.md)
-  - 회원가입 : [회원가입](/docs/account/signup.md)
-  - 아이디/비밀번호 찾기 : [아이디/비밀번호 찾기](/docs/account/find.md)
+  - 로그인 : [로그인](/docs/account/signin)
+  - 회원가입 : [회원가입](/docs/account/signup)
+  - 아이디/비밀번호 찾기 : [아이디/비밀번호 찾기](/docs/account/find)
 - 게시판 관리 기능
-  - 게시판 컴포넌트 모듈화 : [목록](/docs/board/list.md) \| [등록/수정](/docs/board/edit.md) \| [상세](/docs/board/detail.md)
+  - 게시판 컴포넌트 모듈화 : [목록](/docs/board/list) \| [등록/수정](/docs/board/edit) \| [상세](/docs/board/detail)
     - boardType별 api 호출 처리
     - Table 필터 searchParams로 관리
-    - CKEditor 연동 : [CKEditor](/docs/common/editor.md)
-- 공통 에러 핸들링 : [에러 처리](/docs/common/error.md)
+    - CKEditor 연동 : [CKEditor](/docs/common/editor)
+- 공통 에러 핸들링 : [에러 처리](/docs/common/error)
   - axios instance interceptors 사용
-- 공통 다이얼로그 : [Dialog](/docs/common/store.md)
+- 공통 다이얼로그 : [Dialog](/docs/common/store)
   - 스토어에서 상태값 관리
