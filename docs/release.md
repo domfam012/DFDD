@@ -43,53 +43,83 @@ sidebar_position: 7
 | 제거                              | 일부 기능이 삭제되었지만 전체 서비스에는 영향 없음                            | 마이너        | 마이페이지 내 특정 기능 삭제 등                           |
 | 제거                              | 기존 기능이 제거되어 사용자 경험에 큰 영향이 있음                             | 메이저        | 로그인 방식 변경, 핵심 기능 제거 등                       |
 
+### [v2.2.0] 2025.04.25
+
+![기능 추가](https://img.shields.io/badge/%EA%B8%B0%EB%8A%A5%EC%B6%94%EA%B0%80-4CA975)
+
+- [useDevice hook](https://domfam.dooray.com/project/tasks/4043575254424727447)
+  - 사용중인 device 정보를 가져오는 custom hook 추가
+- [게시판 모바일/PC 페이지네이션 분기처리](https://domfam.dooray.com/project/tasks/4046647072163099600)
+  - 모바일은 5page 까지, pc는 10개 페이지 까지 노출
+- [전체 메뉴](https://domfam.dooray.com/project/tasks/4047190483186692382)
+  - 1depth, 2depth 별 메뉴 로직 추가
+- 반응형 작업
+  - [responsive-layout](https://domfam.dooray.com/project/tasks/4042844342778885749)
+  - [responsive-component](https://domfam.dooray.com/project/tasks/4046483319783140574)
+  - [responsive-board](https://domfam.dooray.com/project/tasks/4046492420367334411)
+  - [responsive-auth](https://domfam.dooray.com/project/tasks/4046656751290170410)
+
+![버그 개선](https://img.shields.io/badge/%EB%B2%84%EA%B7%B8%EA%B0%9C%EC%84%A0-FF6464)
+
+- [인증번호 발송 api 에러](https://domfam.dooray.com/project/tasks/4048170767135767938)
+  - 서버 500 error 수정
+
+![최적화](https://img.shields.io/badge/%EC%B5%9C%EC%A0%81%ED%99%94-8662d6)
+
+- [route list & menu list 통합 처리](https://domfam.dooray.com/project/tasks/4052439265637734817)
+  - router, header&sidebar menu list 동일한 상태값으로 관리
+- [lint 수정 및 코드 리팩토링](https://domfam.dooray.com/project/tasks/4050921899810414537)
+  - no-unused-vars 정리
+  - console warning 수정 (map key)
+  - README.md 수정
+
 ### [v2.1.0] 2025.04.11
 
 ![기능 추가](https://img.shields.io/badge/%EA%B8%B0%EB%8A%A5%EC%B6%94%EA%B0%80-4CA975)
 
 - [Ck Editor 테이블 옵션 레이어 추가](https://domfam.dooray.com/project/tasks/4025549532554800070)
-  - [DF-react-core/112 웹접근성 &gt; 에디터 테이블 옵션 레이어 사용](https://domfam.dooray.com/task/view/tasks/4025549532554800070)
+  - [웹접근성 &gt; 에디터 테이블 옵션 레이어 사용](https://domfam.dooray.com/task/view/tasks/4025549532554800070)
   - 웹 접근성 대응을 위한 editorConfig.js 옵션 추가
 - 게시판 정렬 기능 추가 작업
-  - [DF-react-core/136 API &gt; 게시글 목록 &gt; 정렬 기준 추가](https://domfam.dooray.com/task/view/tasks/4040706148173567703)
+  - [API &gt; 게시글 목록 &gt; 정렬 기준 추가](https://domfam.dooray.com/task/view/tasks/4040706148173567703)
     - 정렬(최신순/조회순) 기능 추가
     - boardType 분기 처리
 
 ![기능 변경](https://img.shields.io/badge/%EA%B8%B0%EB%8A%A5%EB%B3%80%EA%B2%BD-FFA01E)
 
 - Ag Grid 댠일 행/셀 등록/수정/삭제
-  - [DF-react-core/82 Ag-Grid &gt; 단일 행/셀 (Single Row / Cell)](https://domfam.dooray.com/task/view/tasks/4011835836955427889)
+  - [Ag-Grid &gt; 단일 행/셀 (Single Row / Cell)](https://domfam.dooray.com/task/view/tasks/4011835836955427889)
   - 기존 트랜잭션 로직 제거, 단일 행/셀 이벤트 처리
 - 계정관리 권한 변경 및 상태 변경 시나리오 개선
-  - [DF-react-core/108 회원 &gt; 계정관리 &gt; 회원관리 등급 설정](https://domfam.dooray.com/task/view/tasks/4023515921822718206)
+  - [회원 &gt; 계정관리 &gt; 회원관리 등급 설정](https://domfam.dooray.com/task/view/tasks/4023515921822718206)
 - 로그인 인가 오류 상태값 추가 작업
-  - [DF-react-core/135 회원 &gt; 로그인 &gt; status 값에 따른 에러 문구 분기처리](https://domfam.dooray.com/task/view/tasks/4040694799122291921)
+  - [회원 &gt; 로그인 &gt; status 값에 따른 에러 문구 분기처리](https://domfam.dooray.com/task/view/tasks/4040694799122291921)
 
 ![버그 개선](https://img.shields.io/badge/%EB%B2%84%EA%B7%B8%EA%B0%9C%EC%84%A0-FF6464)
 
 - 네비게이션 Breadcrumbs 화살표 이슈
-  - [DF-react-core/139 네비게이션 &gt; Breadcrumb &gt; &and;&or; 이슈 수정](https://domfam.dooray.com/task/view/tasks/4040770575644181387)
+  - [네비게이션 &gt; Breadcrumb &gt; &and;&or; 이슈 수정](https://domfam.dooray.com/task/view/tasks/4040770575644181387)
   - 메뉴 상태 변경 시 다른 메뉴 닫기 처리
 - GNB 포커스 벗어났을 때 서브 레이어 안 닫힘 이슈
-  - [DF-react-core/128 웹접근성 &gt; GNB 포커스 벗어나면 레이어 꺼져야함](https://domfam.dooray.com/task/view/tasks/4031464816697490222)
+  - [웹접근성 &gt; GNB 포커스 벗어나면 레이어 꺼져야함](https://domfam.dooray.com/task/view/tasks/4031464816697490222)
     - 로그아웃 버튼 포커스 상태일 때 서브 레이어 닫힘 처리
     - 사이트맵 동작에 따라 알맞은 텍스트 제공 처리
 - 게시판 caption 적절하지 않은 텍스트 제공 이슈
-  - [DF-react-core/127 웹접근성 &gt; 게시판 caption 추가](https://domfam.dooray.com/task/view/tasks/4031423577835746394)
-  - [DF-react-core/133 웹접근성 &gt; 게시판 &gt; caption 상세정보 추가](https://domfam.dooray.com/task/view/tasks/4037138275591965226)
+  - [웹접근성 &gt; 게시판 caption 추가](https://domfam.dooray.com/task/view/tasks/4031423577835746394)
+  - [웹접근성 &gt; 게시판 &gt; caption 상세정보 추가](https://domfam.dooray.com/task/view/tasks/4037138275591965226)
     - 셀렉트 및 검색어 서식 용도 설명 개선
     - 게시판 컬럼명이 포함된 caption 텍스트 제공 처리
 
 ![최적화](https://img.shields.io/badge/%EC%B5%9C%EC%A0%81%ED%99%94-8662d6)
 
 - 게시판 로직 분리
-  - [DF-react-core/131 게시판 &gt; 로직 분리](https://domfam.dooray.com/task/view/tasks/4035571154077140146)
+  - [게시판 &gt; 로직 분리](https://domfam.dooray.com/task/view/tasks/4035571154077140146)
   - 페이지 로직 처리, 컴포넌트 UI 처리
 - Ag Grid 로직 분리
-  - [DF-react-core/138 Ag-Grid &gt; 로직 분리](https://domfam.dooray.com/task/view/tasks/4040747313050573901)
+  - [Ag-Grid &gt; 로직 분리](https://domfam.dooray.com/task/view/tasks/4040747313050573901)
   - 페이지 로직 처리, 컴포넌트 UI 처리
 - feature 브랜치 분기
-  - [DF-react-core/134 feature 브랜치 분기 작업](https://domfam.dooray.com/task/view/tasks/4037741796837039686)
+  - [feature 브랜치 분기 작업](https://domfam.dooray.com/task/view/tasks/4037741796837039686)
   - core, auth, account, post, grid 모듈 단위 브랜치 구성
 
 ### [v2.0.0] 2025.03.28
@@ -98,26 +128,26 @@ sidebar_position: 7
 
 - Ag Grid 피봇 기능 추가 : [Ag Grid](docs/aggrid.md)
 - 서버 이전 및 API 정합 : [API 요청 및 응답](https://domfam.dooray.com/wiki/3996596561546924076/4026136238183912502)
-  - [DF-react-core/106 코어 &gt; 서버 이전 및 API 정합](https://domfam.dooray.com/task/view/tasks/4023510133250834475)
+  - [코어 &gt; 서버 이전 및 API 정합](https://domfam.dooray.com/task/view/tasks/4023510133250834475)
 - 라우팅별 레이아웃 지정 기능 추가
-  - [DF-react-core/111 코어 &gt; 레이아웃 옵션 제공](https://domfam.dooray.com/task/view/tasks/4025478212312453199)
+  - [코어 &gt; 레이아웃 옵션 제공](https://domfam.dooray.com/task/view/tasks/4025478212312453199)
 - 회원가입 약관관리 시나리오 추가
-  - [DF-react-core/103 약관관리 화면 추가](https://domfam.dooray.com/task/view/tasks/4023503811453006253)
+  - [약관관리 화면 추가](https://domfam.dooray.com/task/view/tasks/4023503811453006253)
 
 ![기능 변경](https://img.shields.io/badge/%EA%B8%B0%EB%8A%A5%EB%B3%80%EA%B2%BD-FFA01E)
 
 - TextInput / Password 컴포넌트 통합
-  - [DF-react-core/117 로그인 &gt; TextInput , Password 컴포넌트 통합](https://domfam.dooray.com/task/view/tasks/4026983797871003892)
+  - [로그인 &gt; TextInput , Password 컴포넌트 통합](https://domfam.dooray.com/task/view/tasks/4026983797871003892)
 - 페이지네이션 내 선택된 항목 시각적 표시 추가
-  - [DF-react-core/126 웹접근성 &gt; 페이지네이션 선택됨 표시 추가](https://domfam.dooray.com/task/view/tasks/4031414502716478793)
+  - [웹접근성 &gt; 페이지네이션 선택됨 표시 추가](https://domfam.dooray.com/task/view/tasks/4031414502716478793)
 - 게시판 테이블 클릭 이벤트 사용 요소 변경
-  - [DF-react-core/110 웹접근성 &gt; 클릭 이벤트 사용 요소는 a , button 을 사용](https://domfam.dooray.com/task/view/tasks/4025472169712355446)
+  - [웹접근성 &gt; 클릭 이벤트 사용 요소는 a , button 을 사용](https://domfam.dooray.com/task/view/tasks/4025472169712355446)
   - \<div> → \<Link>
 
 ![최적화](https://img.shields.io/badge/%EC%B5%9C%EC%A0%81%ED%99%94-8662d6)
 
 - 로고 이미지 alt 텍스트 수정
-  - [DF-react-core/79 웹접근성 &gt; 이미지 컴포넌트 적절한 대체 텍스트 제공](https://domfam.dooray.com/task/view/tasks/4011152889068801541)
+  - [웹접근성 &gt; 이미지 컴포넌트 적절한 대체 텍스트 제공](https://domfam.dooray.com/task/view/tasks/4011152889068801541)
   - NipaDreams → Domfam 로고
 
 ### [v1.3.0] 2025.03.14
