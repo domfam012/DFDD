@@ -65,4 +65,4 @@ instance.interceptors.response.use(
 - middleware와 비슷한 개념으로 api를 요청할 때 header에 토큰을 넣는다거나 api를 응답 받기 전에 로그를 쌓고 공통적인 에러를 처리할 때 유용하다.
 - 현재 정의된 에러 코드는 400, 401, 403, 409 등이 있다.
 - 모든 에러 코드를 인터셉터에서 정의할 경우 특수한 경우의 에러코드를 처리할 수 없으므로 공통적으로 처리할 에러코드만 인터셉터에서 관리하는 것이 좋다.
-- [에러 처리](docs/common/error.md)
+- [에러 처리](/docs/guide/common/error)

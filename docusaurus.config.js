@@ -70,6 +70,12 @@ const config = {
             label: 'Guide'
           },
           {
+            type: 'docSidebar',
+            sidebarId: 'apiSidebar',
+            position: 'left',
+            label: 'API'
+          },
+          {
             to: '/release',
             position: 'left',
             label: 'Release Note'
@@ -89,7 +95,11 @@ const config = {
             items: [
               {
                 label: 'Guide',
-                to: '/docs/common'
+                to: '/docs/guide/common'
+              },
+              {
+                label: 'API',
+                to: '/docs/api/list1'
               },
               {
                 label: 'Release Note',

@@ -1,0 +1,10 @@
+{
+  "label": "리스트 예제2",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "slug": "/api/list2",
+    "title": "리스트 예제 페이지",
+    "description": "리스트 예제 페이지입니다."
+  }
+}
