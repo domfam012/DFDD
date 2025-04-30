@@ -28,10 +28,15 @@ sidebar_position: 8
       - feature-aggrid
 ```
 
-:::tip pull, merge 예제
+:::tip pull, merge 가능 예제
 
 - feature-core > feature-board 가능
 - feature-core > feature-auth 가능
+
+:::
+
+:::danger pull, merge 불가능 예제
+
 - feature-board > feature-core 불가능
 - feature-auth > feature-core 불가능
 
