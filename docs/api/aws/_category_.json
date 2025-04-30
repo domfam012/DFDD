@@ -1,0 +1,10 @@
+{
+  "label": "AWS",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "slug": "/api/aws",
+    "title": "AWS",
+    "description": "AWS 설정 페이지입니다."
+  }
+}

@@ -99,7 +99,7 @@ const config = {
               },
               {
                 label: 'API',
-                to: '/docs/api/list1'
+                to: '/docs/api/siteAndAccount'
               },
               {
                 label: 'Release Note',

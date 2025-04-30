@@ -1,0 +1,10 @@
+{
+  "label": "DB",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "slug": "/api/db",
+    "title": "DB",
+    "description": "ERD 및 테이블 페이지입니다."
+  }
+}
