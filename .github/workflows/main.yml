@@ -40,16 +40,7 @@ jobs:
           aws s3 cp \
           --recursive \
           --region ap-northeast-2 \
+          --cache-control "no-cache" \
           /home/runner/work/DFDD/DFDD/build s3://df-react-dd
           
-       #캐시 무효화
-      #- name: CloudFront Invalidation
-      #  env:
-      #       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      #       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      #       AWS_DEFAULT_REGION: ap-northeast-2
-      #       CLOUDFRONT_DISTRIBUTION_ID_1: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
-      #       CLOUDFRONT_DISTRIBUTION_ID_2: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID_2 }}
-      #  run: |
-      #        aws cloudfront create-invalidation --distribution-id "$CLOUDFRONT_DISTRIBUTION_ID_1" --paths "/*"
-      #        aws cloudfront create-invalidation --distribution-id "$CLOUDFRONT_DISTRIBUTION_ID_2" --paths "/*"
+       
