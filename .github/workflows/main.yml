@@ -46,7 +46,6 @@ jobs:
             aws s3 cp "$filepath" "s3://df-react-dd/$relative_path" \
               --region ap-northeast-2 \
               --cache-control "no-cache" \
-              --acl public-read
           done
 
           echo "▶ Uploading other files with long-term cache"
@@ -57,4 +56,3 @@ jobs:
             --exclude "*.html" \
             --region ap-northeast-2 \
             --cache-control "max-age=31536000, immutable" \
-            --acl public-read
