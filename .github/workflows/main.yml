@@ -45,7 +45,7 @@ jobs:
             relative_path="${filepath#$BUILD_DIR/}"
             aws s3 cp "$filepath" "s3://df-react-dd/$relative_path" \
               --region ap-northeast-2 \
-              --cache-control "no-cache" \
+              --cache-control "no-cache"
           done
 
           echo "▶ Uploading other files with long-term cache"
@@ -55,4 +55,4 @@ jobs:
             --recursive \
             --exclude "*.html" \
             --region ap-northeast-2 \
-            --cache-control "max-age=31536000, immutable" \
+            --cache-control "max-age=31536000, immutable"
